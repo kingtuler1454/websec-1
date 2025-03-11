@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="index.js"></script>
+  <title>Калькулятор</title>
+</head>
+<body>
+  <div class="container">
+    <div class="input-group">
+      <input class="input-field" id="input-field1" type="number" placeholder="0"/>
+      <select id="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+      </select>
+      <input class="input-field" id="input-field2" type="number" placeholder="0"/>
+    </div>
+    <button class="calculate-btn" onclick="calculate()">подсчитать</button>
+    <div class="result">
+      <div class="history" id="history"></div>
+      <div class="current-result" id="current-result"></div>
+    </div>
+  </div>
+</body>
+</html>
